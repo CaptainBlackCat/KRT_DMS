@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sub_adapter_text_color">#a6a6a6</color>
+
+    <color name="sub_item_car_buying_attention_container_selected">#166bbb</color>
+    <color name="sub_item_car_buying_attention_container_unselected">#dfe9f2</color>
+
+</resources>

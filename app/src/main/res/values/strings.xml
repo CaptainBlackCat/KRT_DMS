@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KRT_DMS</string>
+
+    <string name="app_item_home">首页</string>
+    <string name="app_item_suspend">反馈</string>
+    <string name="app_item_analyse">分析</string>
+    <string name="app_item_task">任务</string>
+    <string name="app_item_remind">提醒</string>
+    <string name="app_item_category">我的</string>
+
+    <string name="main_menu_nav_job_switching">岗位切换</string>
+    <string name="main_menu_nav_logout">注销</string>
+
+</resources>

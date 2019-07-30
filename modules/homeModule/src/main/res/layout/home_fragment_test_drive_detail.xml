@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="服务类型" />
+
+            <TextView
+                android:id="@+id/service_type"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="试驾" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="车牌类型" />
+
+            <TextView
+                android:id="@+id/license_plate_type"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="浙D324WS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="试驾人员" />
+
+            <TextView
+                android:id="@+id/test_driver"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="哈哈" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="试驾时间" />
+
+            <TextView
+                android:id="@+id/test_drive_time"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="2018-1-2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_10"
+            android:background="@color/base_app_background_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="客户名称" />
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="2018-1-2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="身份证号" />
+
+            <TextView
+                android:id="@+id/identity_number"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="客户电话" />
+
+            <TextView
+                android:id="@+id/customer_number"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/sex"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="2018-1-2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="出生日期" />
+
+            <TextView
+                android:id="@+id/date_of_birth"
+                style="@style/Home_Test_Drive_Detail_TextView_Style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="住址" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/Home_Test_Drive_Detail_TextView_Style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="驾驶证生效日期" />
+
+            <TextView
+                android:id="@+id/driver_license_effective_date"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="2018-1-2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                android:text="驾驶证截止日期" />
+
+            <TextView
+                android:id="@+id/driver_license_deadline"
+                style="@style/Home_Test_Drive_Detail_TextView_Style"
+                tool:text="2018-1-2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

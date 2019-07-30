@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--font size start-->
+
+    <dimen name="base_font_size_small_small">8sp</dimen>
+    <dimen name="base_font_size_small_small_1">9sp</dimen>
+    <dimen name="base_font_size_small_small_2">10sp</dimen>
+
+    <dimen name="base_font_size_small">11sp</dimen>
+    <dimen name="base_font_size_small_1">12sp</dimen>
+    <dimen name="base_font_size_small_2">13sp</dimen>
+
+    <dimen name="base_font_size">14sp</dimen>
+    <dimen name="base_font_size_1">15sp</dimen>
+    <dimen name="base_font_size_2">16sp</dimen>
+
+    <dimen name="base_font_size_large">17sp</dimen>
+    <dimen name="base_font_size_large_1">18sp</dimen>
+    <dimen name="base_font_size_large_2">19sp</dimen>
+    <dimen name="base_font_size_large_3">20sp</dimen>
+
+    <dimen name="base_font_size_large_large">23sp</dimen>
+    <dimen name="base_font_size_large_large_large">26sp</dimen>
+    <dimen name="base_font_size_large_large_large_large">29sp</dimen>
+
+    <!--font size end-->
+
+    <dimen name="base_show_icon_width">@dimen/base_15</dimen>
+
+    <dimen name="base_share_icon_width">@dimen/base_29</dimen>
+
+    <dimen name="base_item_small_icon_width">@dimen/base_11</dimen>
+
+    <dimen name="base_iv_round_radius">@dimen/base_6</dimen>
+
+    <!--布局的 弧度角-->
+    <dimen name="base_layout_corner">@dimen/base_5</dimen>
+
+    <!--普通分割线的高底-->
+    <dimen name="base_cut_apart_line">@dimen/base_1</dimen>
+
+    <!--大分割线的高底-->
+    <dimen name="base_big_cut_apart_line">@dimen/base_10</dimen>
+
+    <!--小按钮的弧度角-->
+    <dimen name="base_small_button_corner">@dimen/base_3</dimen>
+
+    <!--按钮的弧度-->
+    <dimen name="base_button_corner">@dimen/base_6</dimen>
+
+    <!--弹框的宽度-->
+    <dimen name="base_dialog_width">@dimen/base_270</dimen>
+
+    <!--EditText drawable 长、高-->
+    <dimen name="base_edit_text_drawable_width">@dimen/base_24</dimen>
+
+
+</resources>

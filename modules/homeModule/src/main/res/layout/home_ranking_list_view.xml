@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/base_10"
+    android:paddingBottom="@dimen/base_10">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="内部测试人员"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size_small" />
+
+    <View
+        android:id="@+id/percent_view"
+        android:layout_width="@dimen/base_200"
+        android:layout_height="@dimen/base_10"
+        android:layout_marginEnd="@dimen/base_5"
+        android:background="@drawable/home_round_blue_bg" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size_small" />
+
+</LinearLayout>

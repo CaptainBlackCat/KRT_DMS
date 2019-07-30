@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/base_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/base_colorPrimaryDark</item>
+        <item name="colorAccent">@color/base_colorAccent</item>
+    </style>
+
+    <style name="LauncherTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:background">@drawable/splash_bg</item>
+    </style>
+
+    <style name="Nav_Menu_Icon_Style">
+        <item name="android:layout_marginStart">@dimen/base_15</item>
+        <item name="android:contentDescription">@string/base_contentDescription</item>
+        <item name="android:layout_height">@dimen/base_18</item>
+        <item name="android:layout_width">@dimen/base_18</item>
+    </style>
+
+    <style name="Nav_Menu_TextView_Style">
+        <item name="android:layout_marginStart">@dimen/base_15</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/base_font_size_1</item>
+        <item name="android:textColor">@color/base_white</item>
+    </style>
+
+    <style name="Nav_Menu_Container_Style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/base_15</item>
+        <item name="android:paddingBottom">@dimen/base_15</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

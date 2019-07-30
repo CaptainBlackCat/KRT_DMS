@@ -1,0 +1,25 @@
+apply from: "./lib-ext.gradle"
+
+//主项目
+include ':app'
+
+//基础模块
+include 'modulelibs:widgetUtils', 'modulelibs:componentModule', 'modulelibs:baseModule'
+
+//业务组件
+include 'modulelibs:businessModule'
+
+//业务模块
+include 'modules:loginModule', 'modules:categoryModule', 'modules:homeModule', 'modules:remindModule', 'modules:subModule'
+include 'modules:clueAllocationModule'
+
+
+if (localDebug) {
+    include ':xbfframe'
+    project(':xbfframe').projectDir = new File(settingsDir, '../xbf-frameModule')
+
+
+    include ':xbfframe:sizeModule'
+    include ':xbfframe:frameModule'
+    include ':xbfframe:networkModule'
+}

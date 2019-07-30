@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_10"
+        android:background="@drawable/base_rectangle_white_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_8"
+        android:paddingBottom="@dimen/base_8">
+
+        <ImageView
+            android:layout_width="@dimen/base_20"
+            android:layout_height="@dimen/base_20"
+            android:layout_marginStart="@dimen/base_15"
+            android:src="@drawable/bus_ic_search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:layout_marginEnd="@dimen/base_15"
+            android:background="@null"
+            android:hint="@string/clue_please_enter_your_mobile_number_or_customer_name"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/base_font_size_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clue_to_be_assigned_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/Clue_Allocation_Icon_Style"
+            android:src="@drawable/clue_ic_distribution" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:text="@string/clue_clue_to_be_assigned" />
+
+        <TextView
+            android:id="@+id/tv_clue_to_be_assigned"
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_marginStart="@dimen/base_5"
+            android:layout_marginEnd="@dimen/base_5"
+            android:text="0"
+            android:textColor="@color/base_app_font_blue" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/base_0"
+            android:layout_weight="1"
+            android:text=")" />
+
+        <ImageView
+            style="@style/Clue_Allocation_Right_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </LinearLayout>
+
+    <View style="@style/Base_Simple_Line_Style" />
+
+    <LinearLayout
+        android:id="@+id/on_the_job_sales_consultant_continaer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/Clue_Allocation_Icon_Style"
+            android:src="@drawable/clue_ic_sale_consultant" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:text="@string/clue_on_the_job_sales_consultant" />
+
+        <TextView
+            android:id="@+id/tv_on_the_job_sales_consultant"
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_marginStart="@dimen/base_5"
+            android:layout_marginEnd="@dimen/base_5"
+            android:text="0"
+            android:textColor="@color/base_app_font_blue" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/base_0"
+            android:layout_weight="1"
+            android:text=")" />
+
+        <ImageView
+            style="@style/Clue_Allocation_Right_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </LinearLayout>
+
+    <View style="@style/Base_Simple_Line_Style" />
+
+    <LinearLayout
+        android:id="@+id/resignation_sales_consultant_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/Clue_Allocation_Icon_Style"
+            android:src="@drawable/clue_ic_sale_consultant_leave" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:text="@string/clue_resignation_sales_consultant" />
+
+        <TextView
+            android:id="@+id/tv_resignation_sales_consultant"
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_marginStart="@dimen/base_5"
+            android:layout_marginEnd="@dimen/base_5"
+            android:text="0"
+            android:textColor="@color/base_app_font_blue" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/base_0"
+            android:layout_weight="1"
+            android:text=")" />
+
+        <ImageView
+            style="@style/Clue_Allocation_Right_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </LinearLayout>
+
+    <View style="@style/Base_Simple_Line_Style" />
+
+    <LinearLayout
+        android:id="@+id/customer_level_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/Clue_Allocation_Icon_Style"
+            android:src="@drawable/clue_ic_customer" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:text="@string/clue_customer_level" />
+
+        <TextView
+            android:id="@+id/tv_customer_level"
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_marginStart="@dimen/base_5"
+            android:layout_marginEnd="@dimen/base_5"
+            android:text="0"
+            android:textColor="@color/base_app_font_blue" />
+
+        <TextView
+            style="@style/Clue_Allocation_TextView_Style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/base_0"
+            android:layout_weight="1"
+            android:text=")" />
+
+        <ImageView
+            style="@style/Clue_Allocation_Right_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

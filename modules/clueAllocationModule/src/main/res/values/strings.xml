@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ClueAllocationModule</string>
+    <string name="clue_please_enter_your_mobile_number_or_customer_name">请输入手机号或客户名称</string>
+    <string name="clue_clue_to_be_assigned">线索待分配(</string>
+    <string name="clue_on_the_job_sales_consultant">在职销售顾问(</string>
+    <string name="clue_resignation_sales_consultant">离职销售顾问(</string>
+    <string name="clue_customer_level">客户等级(</string>
+    <string name="clue_new_sales_consultant">新销售顾问</string>
+    <string name="clue_distribution">分配</string>
+    <string name="clue_client_s_name">客户名称</string>
+    <string name="clue_customer_phone">客户电话</string>
+    <string name="clue_source_class">来源小类</string>
+    <string name="clue_clue_state">线索状态</string>
+    <string name="clue_sales_consultant">销售顾问</string>
+</resources>

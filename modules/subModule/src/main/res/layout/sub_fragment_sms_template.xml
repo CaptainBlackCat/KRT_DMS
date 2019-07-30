@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/come_to_shop_sms"
+            style="@style/Sub_Send_Sms_TextView_Style"
+            android:layout_width="match_parent"
+            android:background="@color/base_white"
+            android:text="来店短信" />
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <TextView
+            android:id="@+id/go_to_the_store_sms"
+            style="@style/Sub_Send_Sms_TextView_Style"
+            android:layout_width="match_parent"
+            android:background="@color/base_white"
+            android:text="去店短信" />
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <TextView
+            android:id="@+id/booking_a_message"
+            style="@style/Sub_Send_Sms_TextView_Style"
+            android:layout_width="match_parent"
+            android:background="@color/base_white"
+            android:text="订车短信" />
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <TextView
+            android:id="@+id/holiday_message"
+            style="@style/Sub_Send_Sms_TextView_Style"
+            android:layout_width="match_parent"
+            android:background="@color/base_white"
+            android:text="节日短信" />
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

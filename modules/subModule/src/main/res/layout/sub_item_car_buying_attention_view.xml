@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sub_item_car_buying_attention_view_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_3"
+    android:paddingBottom="@dimen/base_3"
+    android:textColor="@drawable/sub_item_car_buying_attention_view_font_bg"
+    android:textSize="@dimen/base_font_size_small_2"
+    tool:text="比特币" />
+

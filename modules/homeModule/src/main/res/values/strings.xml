@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">homeModule</string>
+    <string name="home_page">首页</string>
+    <string name="home_submarines">潜客中心</string>
+    <string name="home_submarine_within_two_days">2天内</string>
+    <string name="home_submarine_after_two_days">2天后</string>
+    <string name="home_submarine_time_out">超时</string>
+    <string name="home_phone">电话</string>
+    <string name="home_sms">短信</string>
+    <string name="home_modify">修改</string>
+    <string name="home_start_test_drive">开始试驾</string>
+    <string name="home_are_you_sure_you_want_to_cancel_the_test_drive">确定取消试驾单吗?</string>
+    <string name="home_test_drive_track">试驾轨迹</string>
+    <string name="are_you_sure_you_want_to_end_the_test_drive">确定结束试驾吗?</string>
+
+    <string-array name="home_test_drive_tab_strings">
+        <item>全部</item>
+        <item>待试驾</item>
+        <item>试驾中</item>
+        <item>待评价</item>
+        <item>已评价</item>
+    </string-array>
+
+</resources>

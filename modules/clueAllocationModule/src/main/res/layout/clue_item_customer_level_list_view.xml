@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white">
+
+    <TextView
+        android:id="@+id/tv_customer_level"
+        style="@style/Clue_Allocation_TextView_Style"
+        android:layout_marginStart="@dimen/base_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tool:text="A级" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/Clue_Allocation_TextView_Style"
+        android:layout_marginStart="@dimen/base_0"
+        android:text="客户("
+        app:layout_constraintLeft_toRightOf="@+id/tv_customer_level" />
+
+    <TextView
+        android:id="@+id/tv_customer_level_count"
+        style="@style/Clue_Allocation_TextView_Style"
+        android:layout_marginStart="@dimen/base_0"
+        app:layout_constraintLeft_toRightOf="@+id/tv1"
+        tool:text="92" />
+
+    <TextView
+        style="@style/Clue_Allocation_TextView_Style"
+        android:layout_marginStart="@dimen/base_0"
+        android:text=")"
+        app:layout_constraintLeft_toRightOf="@+id/tv_customer_level_count" />
+
+    <ImageView
+        android:layout_width="@dimen/base_20"
+        android:layout_height="@dimen/base_20"
+        android:layout_marginEnd="@dimen/base_10"
+        android:src="@drawable/bus_ic_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/Base_Simple_Line_Style"
+        app:layout_constraintTop_toBottomOf="@+id/tv_customer_level" />
+
+</android.support.constraint.ConstraintLayout>

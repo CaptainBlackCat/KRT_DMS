@@ -1,0 +1,3 @@
+package com.krt.submarine.followup.eventbus
+
+class SubmarineFollowUpRefreshEventBus

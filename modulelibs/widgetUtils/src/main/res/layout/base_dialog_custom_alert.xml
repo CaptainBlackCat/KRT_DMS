@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_custom_dialog_bg"
+    android:minWidth="@dimen/base_dialog_width"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_15">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_20"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/base_font_size_large"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tool:text="123jkfdasf" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_15"
+        android:layout_marginEnd="@dimen/base_30"
+        android:layout_marginStart="@dimen/base_30"
+        android:gravity="start"
+        android:maxLines="2"
+        android:textSize="@dimen/base_font_size_1"
+        android:visibility="gone"
+        tool:text="这里是展示内容的地方这里的文字显示为多行" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_cup_apart_line_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_content">
+
+        <TextView
+            android:id="@+id/positive_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_13"
+            android:paddingTop="@dimen/base_13"
+            android:textSize="@dimen/base_font_size"
+            android:visibility="gone"
+            tool:text="@string/base_cancel" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_cup_apart_line_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/negative_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_13"
+            android:paddingTop="@dimen/base_13"
+            android:textSize="@dimen/base_font_size"
+            android:visibility="gone"
+            tool:text="@string/base_sure" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

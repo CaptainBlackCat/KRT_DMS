@@ -1,0 +1,119 @@
+package com.krt.submarine.customerinfo.bean
+
+import android.os.Parcelable
+import com.alibaba.fastjson.annotation.JSONField
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class CustomerInfoEntity(
+        @JSONField(name = "address")
+        val address: String?,
+        @JSONField(name = "city")
+        val city: String? = "",
+        @JSONField(name = "colorCode")
+        val colorCode: String?,
+        @JSONField(name = "comingTime")
+        val comingTime: Long?,
+        @JSONField(name = "companyId")
+        val companyId: Int?,
+        @JSONField(name = "county")
+        val county: String? = "",
+        @JSONField(name = "createdTime")
+        val createdTime: Long?,
+        @JSONField(name = "dealerId")
+        val dealerId: Int?,
+        @JSONField(name = "firstComing")
+        val firstComing: String?,
+        @JSONField(name = "foDate")
+        val foDate: Long?,
+        @JSONField(name = "foSeq")
+        val foSeq: Int?,
+        @JSONField(name = "focusAccessories")
+        val focusAccessories: Int?,
+        @JSONField(name = "focusAfterSales")
+        val focusAfterSales: Int?,
+        @JSONField(name = "focusBattery")
+        val focusBattery: Int?,
+        @JSONField(name = "focusBrands")
+        val focusBrands: Int?,
+        @JSONField(name = "focusCost")
+        val focusCost: Int?,
+        @JSONField(name = "focusExterior")
+        val focusExterior: Int?,
+        @JSONField(name = "focusInterior")
+        val focusInterior: Int?,
+        @JSONField(name = "focusOilwear")
+        val focusOilwear: Int?,
+        @JSONField(name = "focusOther")
+        val focusOther: Int?,
+        @JSONField(name = "focusPerformance")
+        val focusPerformance: Int?,
+        @JSONField(name = "focusPrice")
+        val focusPrice: Int?,
+        @JSONField(name = "focusQuality")
+        val focusQuality: Int?,
+        @JSONField(name = "followupList")
+        val followupList: List<Followup>?,
+        @JSONField(name = "gender")
+        val gender: String?,
+        @JSONField(name = "hasVehicles")
+        val hasVehicles: Int?,
+        @JSONField(name = "infoSource")
+        val infoSource: Int?,
+        @JSONField(name = "isAudited")
+        val audited: Int?,
+        @JSONField(name = "isDsub")
+        val dsub: Int?,
+        @JSONField(name = "isFocus")
+        val focus: Int?,
+        @JSONField(name = "isMortgage")
+        val mortgage: Int?,
+        @JSONField(name = "isTestDrive")
+        val testDrive: Int?,
+        @JSONField(name = "isTransaction")
+        val transaction: Int?,
+        @JSONField(name = "leadsLevel")
+        val leadsLevel: Int?,
+        @JSONField(name = "modelCode")
+        val modelCode: String?,
+        @JSONField(name = "nextFoDate")
+        val nextFoDate: Long?,
+        @JSONField(name = "oemFlag")
+        val oemFlag: Int?,
+        @JSONField(name = "pcMobile")
+        val pcMobile: String = "",
+        @JSONField(name = "pcName")
+        val pcName: String?,
+        @JSONField(name = "pcNo")
+        val pcNo: String?,
+        @JSONField(name = "pcStatus")
+        val pcStatus: Int?,
+        @JSONField(name = "province")
+        val province: String? = "",
+        @JSONField(name = "scruple1")
+        val scruple1: Int?,
+        @JSONField(name = "scruple2")
+        val scruple2: Int?,
+        @JSONField(name = "scruple3")
+        val scruple3: Int?,
+        @JSONField(name = "scruple4")
+        val scruple4: Int?,
+        @JSONField(name = "scruple5")
+        val scruple5: Int?,
+        @JSONField(name = "scruple6")
+        val scruple6: Int?,
+        @JSONField(name = "scruple7")
+        val scruple7: Int?,
+        @JSONField(name = "scruple8")
+        val scruple8: Int?,
+        @JSONField(name = "seriesCode")
+        val seriesCode: String?,
+        @JSONField(name = "soldBy")
+        val soldBy: Int?,
+        @JSONField(name = "soldByName")
+        val soldByName: String?,
+        @JSONField(name = "updatedTime")
+        val updatedTime: Long?,
+        @JSONField(name = "version")
+        val version: Int?
+) : Parcelable

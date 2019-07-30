@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white"
+    android:paddingBottom="@dimen/base_10">
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_10"
+        android:background="@color/base_app_background_gray" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_15"
+        android:paddingStart="@dimen/base_10"
+        android:paddingTop="@dimen/base_10"
+        android:paddingEnd="@dimen/base_10"
+        android:paddingBottom="@dimen/base_10"
+        android:textColor="#828282"
+        android:textSize="@dimen/base_font_size_1"
+        app:layout_constraintTop_toBottomOf="@id/line_top"
+        tool:text="2017-10" />
+
+    <TextView
+        android:id="@+id/test_drive_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_15"
+        android:textColor="#ffb7ab"
+        android:textSize="@dimen/base_font_size_1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_time"
+        tool:text="待试驾" />
+
+    <View
+        android:id="@+id/line1"
+        style="@style/Base_Simple_Line_Style"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_10"
+        android:layout_marginTop="@dimen/base_15"
+        android:layout_marginEnd="@dimen/base_10"
+        android:textColor="@color/base_black"
+        android:textSize="@dimen/base_font_size_large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tool:text="dsafdf" />
+
+    <LinearLayout
+        android:id="@+id/btn_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintRight_toLeftOf="@+id/btn_sms"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name">
+
+        <ImageView
+            android:layout_width="@dimen/base_15"
+            android:layout_height="@dimen/base_15"
+            android:src="@drawable/bus_ic_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:text="@string/home_phone"
+            android:textColor="@color/base_app_font_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name">
+
+        <ImageView
+            android:layout_width="@dimen/base_15"
+            android:layout_height="@dimen/base_15"
+            android:src="@drawable/bus_ic_sms" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:text="@string/home_sms"
+            android:textColor="@color/base_app_font_blue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_car_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_20"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size_2"
+        app:layout_constraintLeft_toLeftOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tool:text="EC718-RV" />
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_15"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_car_type">
+
+        <TextView
+            android:id="@+id/btn_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_black_hollow"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingEnd="@dimen/base_15"
+            android:text="@string/home_modify"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_black_hollow"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingEnd="@dimen/base_15"
+            android:text="@string/base_cancel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_start_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_3"
+            android:paddingEnd="@dimen/base_15"
+            android:paddingBottom="@dimen/base_3"
+            android:text="@string/home_start_test_drive"
+            android:textColor="@color/base_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_end_test_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_3"
+            android:paddingEnd="@dimen/base_15"
+            android:paddingBottom="@dimen/base_3"
+            android:text="结束试驾"
+            android:textColor="@color/base_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_to_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_blue"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_3"
+            android:paddingEnd="@dimen/base_15"
+            android:paddingBottom="@dimen/base_3"
+            android:text="评价"
+            android:textColor="@color/base_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_comment_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_5"
+            android:background="@drawable/home_test_drive_item_btn_black_hollow"
+            android:gravity="center"
+            android:minWidth="@dimen/base_80"
+            android:paddingStart="@dimen/base_15"
+            android:paddingEnd="@dimen/base_15"
+            android:text="评价详情"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/base_100"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/base_default_pic_no_data" />
+
+    <TextView
+        android:id="@+id/warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_15"
+        android:text="没找到你要的内容"
+        android:textColor="@color/base_font_color_gray"
+        android:textSize="@dimen/base_font_size_small_1" />
+
+
+</LinearLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="1、外形的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/appearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="2、内饰的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/interior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="3、空间的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/passengerRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="4、乘坐舒适性的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/comfortDegree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="5、安全性的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="6、车辆实用性的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/practicability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="7、车辆动力及操控性的评价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/powerSteering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="8、该车的综合性评价是否符合期望" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/comprehensive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="9、本次试乘试驾服务的满意程度" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="10、试乘试驾对您购车的影响" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/influenceBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+                android:text="11、您是否会向朋友推荐此车" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:text="非常不满意" />
+
+                <TextView
+                    style="@style/Home_Test_Drive_Comment_TextView_Style"
+                    android:layout_alignParentEnd="true"
+                    android:text="非常满意" />
+
+            </RelativeLayout>
+
+            <com.krt.home.widgets.CommentView
+                android:id="@+id/recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_15" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Home_Test_Drive_Comment_TextView_Title_Style"
+            android:text="您对本次试驾有什么意见或建议" />
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:gravity="start"
+            android:hint="非必填项"
+            android:minHeight="@dimen/base_140"
+            android:minLines="4"
+            android:padding="@dimen/base_10"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size_1" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

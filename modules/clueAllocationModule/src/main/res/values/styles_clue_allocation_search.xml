@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Clue_Allocation_Search_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="android:textColor">@color/base_font_color_black</item>
+        <item name="android:paddingTop">@dimen/base_10</item>
+        <item name="android:paddingBottom">@dimen/base_10</item>
+        <item name="android:paddingStart">@dimen/base_15</item>
+        <item name="layout_constraintLeft_toRightOf">@+id/check_box</item>
+    </style>
+
+    <style name="Clue_Allocation_Search_Line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="android:layout_marginEnd">@dimen/base_15</item>
+        <item name="android:background">#e5e5e5</item>
+        <item name="android:layout_marginStart">@dimen/base_10</item>
+        <item name="layout_constraintLeft_toRightOf">@+id/check_box</item>
+    </style>
+
+</resources>

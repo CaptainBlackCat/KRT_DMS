@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="@dimen/base_30"
+    android:layout_marginLeft="@dimen/base_15"
+    android:layout_marginRight="@dimen/base_15"
+    android:background="@color/base_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_rectangle_white_btn_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_15"
+            android:paddingTop="@dimen/base_15"
+            android:text="@string/base_please_choose_picture_source"
+            android:textColor="@color/base_font_color_gray" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/base_cup_apart_line_color2" />
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_15"
+            android:paddingTop="@dimen/base_15"
+            android:text="@string/base_camera"
+            android:textColor="#FF4081"
+            android:textSize="@dimen/base_font_size_large" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/base_cup_apart_line_color2" />
+
+        <TextView
+            android:id="@+id/tv_file"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_15"
+            android:paddingTop="@dimen/base_15"
+            android:text="@string/base_album"
+            android:textColor="#009EE7"
+            android:textSize="@dimen/base_font_size_large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_15"
+        android:layout_marginTop="@dimen/base_15"
+        android:background="@drawable/base_rectangle_white_btn_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_15"
+            android:paddingTop="@dimen/base_15"
+            android:text="@string/base_cancel"
+            android:textColor="@color/base_font_color_gray"
+            android:textSize="@dimen/base_font_size_large"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Remind_Page_Icon_Style">
+        <item name="android:contentDescription">@string/base_contentDescription</item>
+        <item name="android:layout_height">@dimen/base_25</item>
+        <item name="android:layout_marginStart">@dimen/base_15</item>
+        <item name="android:layout_marginEnd">@dimen/base_8</item>
+        <item name="android:layout_width">@dimen/base_25</item>
+    </style>
+
+    <style name="Remind_Page_TextView_Style_Left">
+        <item name="android:layout_marginTop">@dimen/base_10</item>
+        <item name="android:layout_marginBottom">@dimen/base_10</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="android:textColor">@color/base_black</item>
+    </style>
+
+    <style name="Remind_Page_TextView_Style_Right">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="android:textColor">@color/base_black</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="Remind_Page_Red_TextView_Style">
+        <item name="android:layout_marginStart">@dimen/base_5</item>
+        <item name="android:layout_marginEnd">@dimen/base_5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/base_font_size</item>
+        <item name="android:textColor">@color/base_red</item>
+    </style>
+
+    <!--<style name="Remind_Page_EditView_Style">-->
+    <!--<item name="android:layout_marginStart">@dimen/base_15</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:layout_width">0dp</item>-->
+    <!--<item name="android:background">@null</item>-->
+    <!--<item name="layout_constraintTop_toTopOf">parent</item>-->
+    <!--<item name="layout_constraintBottom_toBottomOf">parent</item>-->
+    <!--<item name="android:textSize">@dimen/base_font_size_1</item>-->
+    <!--<item name="android:textColor">@color/base_black</item>-->
+    <!--</style>-->
+
+</resources>

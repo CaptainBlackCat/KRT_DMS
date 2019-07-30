@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/base_15"
+    android:paddingEnd="@dimen/base_25">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:paddingTop="@dimen/base_10"
+        android:paddingBottom="@dimen/base_10"
+        android:textColor="@color/base_black"
+        android:textSize="@dimen/base_font_size"
+        tool:text="名称" />
+
+    <TextView
+        android:id="@+id/tv_should_follow_up"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/base_font_color_blue"
+        android:textSize="@dimen/base_font_size"
+        tool:text="应跟进" />
+
+    <TextView
+        android:id="@+id/tv_has_finished"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/base_font_color_blue"
+        android:textSize="@dimen/base_font_size"
+        tool:text="已完成" />
+
+    <TextView
+        android:id="@+id/tv_not_finished"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/base_font_color_blue"
+        android:textSize="@dimen/base_font_size"
+        tool:text="未完成" />
+
+</LinearLayout>
+

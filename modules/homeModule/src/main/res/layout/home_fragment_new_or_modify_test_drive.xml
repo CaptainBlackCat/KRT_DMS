@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white">
+
+        <ImageView
+            android:layout_width="@dimen/base_5"
+            android:layout_height="@dimen/base_5"
+            android:src="@color/base_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/Home_Modify_Test_Drive_TextView_Style"
+            android:text="客户姓名" />
+
+        <com.krt.base.widgets.EditTextWithClear
+            android:id="@+id/et_customer_name"
+            style="@style/Home_Modify_Test_Drive_EditView_Style"
+            app:layout_constraintLeft_toRightOf="@+id/tv1"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/Home_Modify_Test_Drive_Line_Style" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white">
+
+        <ImageView
+            android:layout_width="@dimen/base_5"
+            android:layout_height="@dimen/base_5"
+            android:src="@color/base_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/Home_Modify_Test_Drive_TextView_Style"
+            android:text="客户电话" />
+
+        <com.krt.base.widgets.EditTextWithClear
+            android:id="@+id/et_customer_phone"
+            style="@style/Home_Modify_Test_Drive_EditView_Style"
+            android:inputType="phone"
+            app:layout_constraintLeft_toRightOf="@+id/tv2"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/Home_Modify_Test_Drive_Line_Style" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/Home_Modify_Test_Drive_TextView_Style"
+            android:text="预约类型" />
+
+        <RadioGroup
+            style="@style/Home_Modify_Test_Radio_Group"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/tv3">
+
+            <RadioButton
+                android:id="@+id/test_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="试驾" />
+
+            <RadioButton
+                android:id="@+id/test_ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试乘" />
+
+        </RadioGroup>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/Home_Modify_Test_Drive_Line_Style" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/license_plate_model_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/Home_Modify_Test_Drive_TextView_Style"
+            android:text="车牌车型" />
+
+        <TextView
+            android:id="@+id/license_plate_model"
+            style="@style/Home_Modify_Test_Drive_EditView_Style"
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/tv4" />
+
+        <ImageView
+            style="@style/Home_Modify_Test_Drive_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/Home_Modify_Test_Drive_Line_Style" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/test_drive_time_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white">
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/Home_Modify_Test_Drive_TextView_Style"
+            android:text="试驾时间" />
+
+        <TextView
+            android:id="@+id/test_drive_time"
+            style="@style/Home_Modify_Test_Drive_EditView_Style"
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/tv5" />
+
+        <ImageView
+            style="@style/Home_Modify_Test_Drive_Icon_Style"
+            android:src="@drawable/bus_ic_forward" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_15"
+        android:layout_marginTop="@dimen/base_20"
+        android:layout_marginEnd="@dimen/base_15"
+        android:background="@drawable/home_test_drive_item_btn_blue"
+        android:gravity="center"
+        android:minHeight="@dimen/base_0"
+        android:text="修改"
+        android:textColor="@color/base_white"
+        android:textSize="@dimen/base_font_size_1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/create_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/base_20"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_appointment_test_drive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_20"
+            android:layout_marginEnd="@dimen/base_20"
+            android:layout_weight="1"
+            android:background="@drawable/home_test_drive_item_btn_blue"
+            android:gravity="center"
+            android:minHeight="@dimen/base_0"
+            android:text="预约试乘试驾"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_1" />
+
+        <Button
+            android:id="@+id/btn_right_now_test_drive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_20"
+            android:layout_marginEnd="@dimen/base_20"
+            android:layout_weight="1"
+            android:background="@drawable/home_test_drive_item_btn_blue"
+            android:gravity="center"
+            android:minHeight="@dimen/base_0"
+            android:text="立即试乘试驾"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

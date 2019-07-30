@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_app_background_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_15"
+        android:layout_marginEnd="@dimen/base_15"
+        android:layout_marginBottom="@dimen/base_10"
+        android:background="@drawable/home_rectangle_light_blue_bg">
+
+        <TextView
+            android:id="@+id/monthly_performance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:layout_marginTop="@dimen/base_15"
+            android:text="当月业绩"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/round_out"
+            android:layout_width="@dimen/base_130"
+            android:layout_height="@dimen/base_130"
+            android:background="@drawable/home_round_hollow_black_2_dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthly_performance" />
+
+        <View
+            android:layout_width="@dimen/base_110"
+            android:layout_height="@dimen/base_110"
+            android:background="@drawable/home_round_solid_white_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/round_out"
+            app:layout_constraintLeft_toLeftOf="@id/round_out"
+            app:layout_constraintRight_toRightOf="@id/round_out"
+            app:layout_constraintTop_toTopOf="@+id/round_out" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="#5fbbfa"
+            app:layout_constraintTop_toBottomOf="@+id/round_out" />
+
+        <ImageView
+            android:id="@+id/order_icon"
+            android:layout_width="@dimen/base_23"
+            android:layout_height="@dimen/base_23"
+            android:layout_marginStart="@dimen/base_15"
+            android:src="@drawable/home_ic_doc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_8"
+            android:layout_marginTop="@dimen/base_3"
+            android:text="0"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_large_large"
+            app:layout_constraintLeft_toRightOf="@+id/order_icon"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_2"
+            android:layout_marginBottom="@dimen/base_3"
+            android:text="订单数"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_small_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/order_count"
+            app:layout_constraintTop_toBottomOf="@+id/order_count" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:background="#5fbbfa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/line1" />
+
+
+        <ImageView
+            android:id="@+id/submarines_icon"
+            android:layout_width="@dimen/base_23"
+            android:layout_height="@dimen/base_23"
+            android:layout_marginStart="@dimen/base_15"
+            android:src="@drawable/home_ic_people"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/line2"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/submarines_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_8"
+            android:layout_marginTop="@dimen/base_3"
+            android:text="0"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_large_large"
+            app:layout_constraintLeft_toRightOf="@+id/submarines_icon"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_2"
+            android:layout_marginBottom="@dimen/base_3"
+            android:text="潜客数"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_small_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/submarines_count"
+            app:layout_constraintTop_toBottomOf="@+id/submarines_count" />
+
+
+        <View
+            android:id="@+id/round_left_small"
+            android:layout_width="@dimen/base_6"
+            android:layout_height="@dimen/base_6"
+            android:background="@drawable/home_round_hollow_black_2_px"
+            app:layout_constraintBottom_toBottomOf="@id/round_out"
+            app:layout_constraintLeft_toLeftOf="@+id/monthly_performance"
+            app:layout_constraintTop_toTopOf="@+id/round_out" />
+
+        <View
+            android:layout_width="@dimen/base_65"
+            android:layout_height="2px"
+            android:background="@color/base_black"
+            app:layout_constraintBottom_toBottomOf="@+id/round_left_small"
+            app:layout_constraintLeft_toRightOf="@+id/round_left_small"
+            app:layout_constraintTop_toTopOf="@+id/round_left_small" />
+
+        <TextView
+            android:id="@+id/number_of_indicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_4"
+            android:layout_marginTop="@dimen/base_1"
+            android:text="100"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_large_1"
+            app:layout_constraintLeft_toLeftOf="@+id/round_left_small"
+            app:layout_constraintTop_toBottomOf="@+id/round_left_small" />
+
+        <TextView
+            android:id="@+id/tv_number_of_indicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_4"
+            android:layout_marginBottom="@dimen/base_4"
+            android:text="指标数"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_1"
+            app:layout_constraintBottom_toTopOf="@+id/round_left_small"
+            app:layout_constraintLeft_toLeftOf="@+id/round_left_small" />
+
+        <View
+            android:id="@+id/round_right_small"
+            android:layout_width="@dimen/base_6"
+            android:layout_height="@dimen/base_6"
+            android:layout_marginEnd="@dimen/base_15"
+            android:background="@drawable/home_round_hollow_white_2_px"
+            app:layout_constraintBottom_toBottomOf="@id/round_out"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/round_out" />
+
+        <View
+            android:layout_width="@dimen/base_65"
+            android:layout_height="2px"
+            android:background="@color/base_white"
+            app:layout_constraintBottom_toBottomOf="@+id/round_left_small"
+            app:layout_constraintRight_toLeftOf="@+id/round_right_small"
+            app:layout_constraintTop_toTopOf="@+id/round_left_small" />
+
+        <TextView
+            android:id="@+id/number_of_terminals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_1"
+            android:layout_marginEnd="@dimen/base_4"
+            android:text="100"
+            android:textColor="#db5e42"
+            android:textSize="@dimen/base_font_size_large_1"
+            app:layout_constraintRight_toRightOf="@+id/round_right_small"
+            app:layout_constraintTop_toBottomOf="@+id/round_right_small" />
+
+        <TextView
+            android:id="@+id/tv_terminals_of_indicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_4"
+            android:layout_marginBottom="@dimen/base_4"
+            android:text="终端数"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_1"
+            app:layout_constraintBottom_toTopOf="@+id/round_right_small"
+            app:layout_constraintRight_toRightOf="@+id/round_right_small" />
+
+        <TextView
+            android:id="@+id/completion_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="#0a8cac"
+            android:textSize="@dimen/base_font_size_large"
+            app:layout_constraintBottom_toBottomOf="@id/round_out"
+            app:layout_constraintLeft_toLeftOf="@+id/round_out"
+            app:layout_constraintRight_toRightOf="@id/round_out"
+            app:layout_constraintTop_toTopOf="@id/round_out" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成率"
+            android:textColor="#0a8cac"
+            android:textSize="@dimen/base_font_size_small_1"
+            app:layout_constraintLeft_toLeftOf="@+id/round_out"
+            app:layout_constraintRight_toRightOf="@id/round_out"
+            app:layout_constraintTop_toBottomOf="@+id/completion_rate" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

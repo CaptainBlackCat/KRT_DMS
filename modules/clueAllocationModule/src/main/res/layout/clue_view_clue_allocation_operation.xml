@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dbdfde"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <CheckBox
+        android:id="@+id/check_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_20"
+        android:text="全选"
+        app:layout_constraintBottom_toBottomOf="@+id/name_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_container" />
+
+    <TextView
+        android:id="@+id/new_sales_consultant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_30"
+        android:text="@string/clue_new_sales_consultant"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/name_container"
+        app:layout_constraintLeft_toRightOf="@+id/check_all"
+        app:layout_constraintTop_toTopOf="@+id/name_container" />
+
+    <LinearLayout
+        android:id="@+id/name_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_10"
+        android:layout_marginEnd="@dimen/base_20"
+        android:background="@drawable/base_rectangle_white_layout_bg"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_distribution"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="@dimen/base_120"
+            android:paddingTop="@dimen/base_5"
+            android:paddingBottom="@dimen/base_5"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size_1"
+            tool:text="曹操" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="@dimen/base_20"
+            android:layout_height="@dimen/base_20"
+            android:layout_marginEnd="@dimen/base_5"
+            android:src="@drawable/bus_ic_arrow_down" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_distribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_20"
+        android:layout_marginTop="@dimen/base_10"
+        android:layout_marginEnd="@dimen/base_20"
+        android:layout_marginBottom="@dimen/base_15"
+        android:background="@drawable/clue_distribution_green_btn_bg"
+        android:text="@string/clue_distribution"
+        android:textColor="@color/base_white"
+        android:textSize="@dimen/base_font_size_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_container" />
+
+</android.support.constraint.ConstraintLayout>

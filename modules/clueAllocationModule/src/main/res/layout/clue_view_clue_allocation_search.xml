@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dbdfde">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_10"
+        android:layout_marginTop="@dimen/base_15"
+        android:layout_marginEnd="@dimen/base_10"
+        android:background="@drawable/base_rectangle_white_layout_bg">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_18"
+            app:layout_constraintBottom_toBottomOf="@+id/client_s_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/client_s_name" />
+
+        <TextView
+            android:id="@+id/client_s_name"
+            style="@style/Clue_Allocation_Search_TextView"
+            android:text="@string/clue_client_s_name" />
+
+        <TextView
+            android:id="@+id/tv_client_s_name"
+            style="@style/Clue_Allocation_Search_TextView"
+            app:layout_constraintLeft_toRightOf="@+id/client_s_name"
+            tool:text="dfadfafd" />
+
+        <View
+            android:id="@+id/line1"
+            style="@style/Clue_Allocation_Search_Line"
+            app:layout_constraintTop_toBottomOf="@+id/client_s_name" />
+
+        <TextView
+            android:id="@+id/customer_phone"
+            style="@style/Clue_Allocation_Search_TextView"
+            android:text="@string/clue_customer_phone"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <TextView
+            android:id="@+id/tv_customer_phone"
+            style="@style/Clue_Allocation_Search_TextView"
+            app:layout_constraintLeft_toRightOf="@+id/customer_phone"
+            app:layout_constraintTop_toTopOf="@+id/customer_phone"
+            tool:text="dfadfafd" />
+
+        <View
+            android:id="@+id/line2"
+            style="@style/Clue_Allocation_Search_Line"
+            app:layout_constraintTop_toBottomOf="@+id/customer_phone" />
+
+        <TextView
+            android:id="@+id/source_class"
+            style="@style/Clue_Allocation_Search_TextView"
+            android:text="@string/clue_source_class"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <TextView
+            android:id="@+id/tv_source_class"
+            style="@style/Clue_Allocation_Search_TextView"
+            app:layout_constraintLeft_toRightOf="@+id/source_class"
+            app:layout_constraintTop_toTopOf="@+id/source_class"
+            tool:text="dfadfafd" />
+
+        <View
+            android:id="@+id/line3"
+            style="@style/Clue_Allocation_Search_Line"
+            app:layout_constraintTop_toBottomOf="@+id/source_class" />
+
+        <TextView
+            android:id="@+id/clue_state"
+            style="@style/Clue_Allocation_Search_TextView"
+            android:text="@string/clue_clue_state"
+            app:layout_constraintTop_toBottomOf="@id/line3" />
+
+        <TextView
+            android:id="@+id/tv_clue_state"
+            style="@style/Clue_Allocation_Search_TextView"
+            app:layout_constraintLeft_toRightOf="@+id/clue_state"
+            app:layout_constraintTop_toTopOf="@+id/clue_state"
+            tool:text="dfadfafd" />
+
+        <View
+            android:id="@+id/line4"
+            style="@style/Clue_Allocation_Search_Line"
+            app:layout_constraintTop_toBottomOf="@+id/clue_state" />
+
+        <TextView
+            android:id="@+id/sales_consultant"
+            style="@style/Clue_Allocation_Search_TextView"
+            android:text="@string/clue_sales_consultant"
+            app:layout_constraintTop_toBottomOf="@id/line4" />
+
+        <TextView
+            android:id="@+id/tv_sales_consultant"
+            style="@style/Clue_Allocation_Search_TextView"
+            app:layout_constraintLeft_toRightOf="@+id/sales_consultant"
+            app:layout_constraintTop_toTopOf="@+id/sales_consultant"
+            tool:text="dfadfafd" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

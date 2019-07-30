@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/please_select_test_drive_personnel_contianer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv1" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="试驾人员" />
+
+            <TextView
+                android:id="@+id/please_select_test_drive_personnel"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请选择试驾人员"
+                app:layout_constraintLeft_toRightOf="@+id/tv1"
+                app:layout_constraintRight_toLeftOf="@+id/iv1" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/Home_Start_Test_Drive_Open_More" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_10"
+            android:background="@color/base_app_background_gray" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_10">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintBottom_toBottomOf="@id/tv2"
+                app:layout_constraintRight_toLeftOf="@+id/tv2"
+                app:layout_constraintTop_toTopOf="@id/tv2" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="驾驶信息"
+                app:layout_constraintBottom_toBottomOf="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_original_driver_s_license"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/base_30"
+                android:layout_marginTop="@dimen/base_10"
+                android:layout_marginEnd="@dimen/base_15"
+                android:src="@drawable/bus_ic_default_photo"
+                app:layout_constraintDimensionRatio="526:394"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_copy_of_driver_s_license"
+                app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_10"
+                android:text="请扫描驾驶证正本"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_original_driver_s_license"
+                app:layout_constraintRight_toRightOf="@+id/iv_original_driver_s_license"
+                app:layout_constraintTop_toBottomOf="@+id/iv_original_driver_s_license" />
+
+            <ImageView
+                android:id="@+id/iv_copy_of_driver_s_license"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/base_15"
+                android:layout_marginEnd="@dimen/base_30"
+                android:src="@drawable/bus_ic_default_photo"
+                app:layout_constraintDimensionRatio="526:394"
+                app:layout_constraintLeft_toRightOf="@+id/iv_original_driver_s_license"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_original_driver_s_license" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_10"
+                android:text="请扫描驾驶证副本"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_copy_of_driver_s_license"
+                app:layout_constraintRight_toRightOf="@+id/iv_copy_of_driver_s_license"
+                app:layout_constraintTop_toBottomOf="@+id/iv_copy_of_driver_s_license" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/effective_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv3" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="生效日期" />
+
+            <TextView
+                android:id="@+id/effective_date"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请选择生效日期"
+                app:layout_constraintLeft_toRightOf="@+id/tv3"
+                app:layout_constraintRight_toLeftOf="@+id/iv3" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                style="@style/Home_Start_Test_Drive_Open_More" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/deadline_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv4" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="截止日期" />
+
+            <TextView
+                android:id="@+id/tv_deadline"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请选择截止日期"
+                app:layout_constraintLeft_toRightOf="@+id/tv4"
+                app:layout_constraintRight_toLeftOf="@+id/iv4" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                style="@style/Home_Start_Test_Drive_Open_More" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_10"
+            android:background="@color/base_app_background_gray" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_10">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintBottom_toBottomOf="@id/tv5"
+                app:layout_constraintRight_toLeftOf="@+id/tv5"
+                app:layout_constraintTop_toTopOf="@id/tv5" />
+
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="身份信息"
+                app:layout_constraintBottom_toBottomOf="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_id_card_front"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/base_30"
+                android:layout_marginTop="@dimen/base_10"
+                android:layout_marginEnd="@dimen/base_15"
+                android:src="@drawable/bus_ic_default_photo"
+                app:layout_constraintDimensionRatio="526:394"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_back_of_id_card"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_10"
+                android:text="请扫描身份证正面"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_id_card_front"
+                app:layout_constraintRight_toRightOf="@+id/iv_id_card_front"
+                app:layout_constraintTop_toBottomOf="@+id/iv_id_card_front" />
+
+            <ImageView
+                android:id="@+id/iv_back_of_id_card"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/base_15"
+                android:layout_marginEnd="@dimen/base_30"
+                android:src="@drawable/bus_ic_default_photo"
+                app:layout_constraintDimensionRatio="526:394"
+                app:layout_constraintLeft_toRightOf="@+id/iv_id_card_front"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_id_card_front" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_10"
+                android:text="请扫身份证背面"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_back_of_id_card"
+                app:layout_constraintRight_toRightOf="@+id/iv_back_of_id_card"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back_of_id_card" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv6" />
+
+            <TextView
+                android:id="@+id/tv6"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="客户姓名" />
+
+            <com.krt.base.widgets.EditTextWithClear
+                android:id="@+id/please_enter_the_customer_name"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请输入客户姓名"
+                app:layout_constraintLeft_toRightOf="@+id/tv6"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv7" />
+
+            <TextView
+                android:id="@+id/tv7"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="身份证号" />
+
+            <com.krt.base.widgets.EditTextWithClear
+                android:id="@+id/identity_number"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请输入身份证号"
+                android:inputType="number"
+                app:layout_constraintLeft_toRightOf="@+id/tv7"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv8" />
+
+            <TextView
+                android:id="@+id/tv8"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="客户电话" />
+
+            <com.krt.base.widgets.EditTextWithClear
+                android:id="@+id/please_enter_customer_phone_number"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请输入客户电话"
+                android:inputType="number"
+                app:layout_constraintLeft_toRightOf="@+id/tv8"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/please_select_gender_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv9" />
+
+            <TextView
+                android:id="@+id/tv9"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/please_select_gender"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请选择性别"
+                app:layout_constraintLeft_toRightOf="@+id/tv9"
+                app:layout_constraintRight_toLeftOf="@+id/iv9" />
+
+            <ImageView
+                android:id="@+id/iv9"
+                style="@style/Home_Start_Test_Drive_Open_More" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/please_select_the_date_of_birth_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv10" />
+
+            <TextView
+                android:id="@+id/tv10"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="出生日期" />
+
+            <TextView
+                android:id="@+id/please_select_the_date_of_birth"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请选择出生日期"
+                app:layout_constraintLeft_toRightOf="@+id/tv10"
+                app:layout_constraintRight_toLeftOf="@+id/iv10" />
+
+            <ImageView
+                android:id="@+id/iv10"
+                style="@style/Home_Start_Test_Drive_Open_More" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/please_select_an_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintRight_toLeftOf="@+id/tv11" />
+
+            <TextView
+                android:id="@+id/tv11"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="地址" />
+
+            <com.krt.base.widgets.EditTextWithClear
+                android:id="@+id/please_select_an_address"
+                style="@style/Home_Start_Test_Drive_EditView_Style"
+                android:hint="请输入地址"
+                app:layout_constraintLeft_toRightOf="@+id/tv11"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_10"
+            android:background="@color/base_app_background_gray" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_10">
+
+            <ImageView
+                style="@style/Home_Start_Test_Drive_Red_SmallIcon_Style"
+                app:layout_constraintBottom_toBottomOf="@id/tv12"
+                app:layout_constraintRight_toLeftOf="@+id/tv12"
+                app:layout_constraintTop_toTopOf="@id/tv12" />
+
+            <TextView
+                android:id="@+id/tv12"
+                style="@style/Home_Start_Test_Drive_TextView_Style"
+                android:text="试驾协议"
+                app:layout_constraintBottom_toBottomOf="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/test_drive_agreement"
+                android:layout_width="@dimen/base_100"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/base_30"
+                android:layout_marginTop="@dimen/base_10"
+                android:layout_marginEnd="@dimen/base_15"
+                android:src="@drawable/bus_ic_default_photo"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv12" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_app_background_gray">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/base_30"
+                android:layout_marginTop="@dimen/base_15"
+                android:layout_marginEnd="@dimen/base_30"
+                android:layout_marginBottom="@dimen/base_15"
+                android:background="@drawable/home_test_drive_item_btn_blue"
+                android:minHeight="@dimen/base_0"
+                android:text="提交资料"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_large" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

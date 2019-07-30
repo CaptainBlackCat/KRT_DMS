@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/base_10"
+    android:paddingBottom="@dimen/base_10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="156">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_20"
+            android:layout_marginStart="@dimen/base_15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="205"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size"
+            tool:text="太平洋网络" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="300"
+        android:ellipsize="middle"
+        android:gravity="start"
+        android:paddingEnd="@dimen/base_10"
+        android:singleLine="true"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size"
+        tool:text="太平洋fdafdf网络" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="320"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/base_15">
+
+        <TextView
+            android:id="@+id/tv_sold_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size"
+            tool:text="垂直媒体" />
+
+        <TextView
+            android:id="@+id/info_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size"
+            tool:text="垂直媒体" />
+
+    </LinearLayout>
+
+</LinearLayout>

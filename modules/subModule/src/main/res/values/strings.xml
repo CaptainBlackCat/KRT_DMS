@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">submarineModule</string>
+    <string name="sub_please_input">请输入</string>
+    <string name="sub_please_choose">请选择</string>
+    <string name="sub_the_thread_can_be_created">该线索可以创建</string>
+    <string name="sub_expand_more_information">展开更多信息</string>
+    <string name="sub_collapse_information">收起信息</string>
+    <string name="sub_has_modify_info_and_has_not_save">修改了信息还未保存，确认返回吗?</string>
+    <string name="sub_intentional_car">意向车系</string>
+    <string name="sub_intentional_model">意向车型</string>
+    <string name="sub_historical_track_record">历史跟踪记录</string>
+    <string name="sub_number_of_pending_audits">待审核数</string>
+    <string name="sub_the_number_of_defeats_this_month">本月战败数</string>
+    <string name="sub_consultant_name">顾问姓名</string>
+    <string name="sub_pass">通过</string>
+    <string name="sub_reject">驳回</string>
+    <string name="sub_distribution">分配</string>
+    <string name="sub_cause_of_defeat">战败原因</string>
+    <string name="sub_defeat_description">战败描述</string>
+    <string name="sub_network_order">网络订单</string>
+    <string name="sub_transfer_order">转订单</string>
+
+    <string-array name="sub_car_buying_attention">
+        <item>性能</item>
+        <item>价格</item>
+        <item>外观</item>
+        <item>内饰</item>
+        <item>油耗</item>
+        <item>服务</item>
+        <item>配件价格</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="sub_submarine_tab_strings">
+        <item>2天内</item>
+        <item>2天后</item>
+        <item>超时</item>
+    </string-array>
+
+</resources>

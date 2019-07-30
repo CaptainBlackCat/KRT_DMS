@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/base_15"
+        android:paddingEnd="@dimen/base_25">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="名称"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="应跟进"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="已完成"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="未完成"
+            android:textColor="@color/base_black"
+            android:textSize="@dimen/base_font_size_1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        style="@style/Base_Simple_Line_Style"
+        android:layout_height="@dimen/base_10" />
+
+    <com.krt.frame.pullrecyclerview.AutoSwipeRefreshView
+        android:id="@+id/base_lceRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/base_lceRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </com.krt.frame.pullrecyclerview.AutoSwipeRefreshView>
+
+</LinearLayout>

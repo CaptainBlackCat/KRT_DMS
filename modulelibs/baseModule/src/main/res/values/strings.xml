@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="base_save">保存</string>
+    <string name="base_cancel">取消</string>
+    <string name="base_sure">确定</string>
+    <string name="base_delete">删除</string>
+    <string name="base_back">返回</string>
+    <string name="base_retry">重试</string>
+    <string name="base_warn">提示</string>
+    <string name="base_reload">重新加载</string>
+    <string name="base_look_over">查看</string>
+
+    <string name="base_input_type_digits">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+    <string name="base_input_type_digits_more">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM.-/\()=+_
+    </string>
+
+</resources>

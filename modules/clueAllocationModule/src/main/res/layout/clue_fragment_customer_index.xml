@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_background_gray">
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_5"
+        android:background="@drawable/base_rectangle_white_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_8"
+        android:paddingBottom="@dimen/base_8"
+        app:layout_constraintBottom_toTopOf="@+id/leads_level_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/base_20"
+            android:layout_height="@dimen/base_20"
+            android:layout_marginStart="@dimen/base_15"
+            android:src="@drawable/bus_ic_search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:layout_marginEnd="@dimen/base_15"
+            android:background="@null"
+            android:hint="@string/clue_please_enter_your_mobile_number_or_customer_name"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/base_font_size_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/leads_level_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_5"
+        android:background="@color/base_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/search_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_10"
+            android:text="客户等级"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size" />
+
+        <TextView
+            android:id="@+id/tv_leads_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size"
+            tool:text="B" />
+
+        <ImageView
+            android:layout_width="@dimen/base_25"
+            android:layout_height="@dimen/base_25"
+            android:layout_marginEnd="@dimen/base_15"
+            android:src="@drawable/bus_ic_forward" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/Base_Simple_Line_Style"
+        app:layout_constraintTop_toBottomOf="@+id/leads_level_container" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.krt.base.widgets.index.IndexBar.widget.IndexBar
+        android:id="@+id/index_bar"
+        android:layout_width="@dimen/base_24"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        app:indexBarPressBackground="@color/base_transparent"
+        app:indexBarTextColor="@color/base_app_font_blue"
+        app:indexBarTextSize="@dimen/base_font_size"
+        app:layout_constraintBottom_toBottomOf="@id/recycler_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recycler_view" />
+
+    <TextView
+        android:id="@+id/tv_side_bar_hint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/clue_shape_side_bar_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view"
+        tool:text="A"
+        tool:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

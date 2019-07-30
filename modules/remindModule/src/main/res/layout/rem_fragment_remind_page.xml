@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_background_gray">
+
+    <LinearLayout
+        android:id="@+id/consultant_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/timeout_not_followed_contianer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_1" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您有" />
+
+            <TextView
+                android:id="@+id/timeout_not_followed"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个潜客超时未跟进" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/within_2_days_customer_to_follow_up_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_2" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您2天内有" />
+
+            <TextView
+                android:id="@+id/within_2_days_customer_to_follow_up"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个客户待跟进" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+
+        <LinearLayout
+            android:id="@+id/current_reservation_customer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_3" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您本月有" />
+
+            <TextView
+                android:id="@+id/current_reservation_customer"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个客户预约了试乘试驾" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/history_reservation_customer_contianer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_4" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您历史有" />
+
+            <TextView
+                android:id="@+id/history_reservation_customer"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个客户预约了试乘试驾" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/current_reservation_not_yet_finished_customer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_5" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您本月有" />
+
+            <TextView
+                android:id="@+id/current_reservation_not_yet_finished_customer"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个客户试乘试驾中还未结束" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/history_reservation_not_yet_finished_customer_contianer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_6" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="您历史有" />
+
+            <TextView
+                android:id="@+id/history_reservation_not_yet_finished_customer"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="个客户试乘试驾中还未结束" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/manager_timeout_not_followed_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_1" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="潜客超时未跟进的有" />
+
+            <TextView
+                android:id="@+id/manager_timeout_not_followed"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="人" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/manager_unallocated_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_2" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="潜客线索待分配信息有" />
+
+            <TextView
+                android:id="@+id/manager_unallocated"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="条" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/defeated_for_review_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/rem_ic_warn_3" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Left"
+                android:text="战败待审核信息有" />
+
+            <TextView
+                android:id="@+id/defeated_for_review"
+                style="@style/Remind_Page_Red_TextView_Style"
+                android:text="0" />
+
+            <TextView
+                style="@style/Remind_Page_TextView_Style_Right"
+                android:text="条" />
+
+            <ImageView
+                style="@style/Remind_Page_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

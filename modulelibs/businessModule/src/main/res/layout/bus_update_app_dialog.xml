@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/base_iv_round_radius">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/base_15"
+            android:background="@color/base_white"
+            android:text="1.0.0版本更新"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size_large" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/update_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_15"
+            android:layout_marginStart="@dimen/base_15"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size" />
+
+        <ProgressBar
+            android:id="@+id/update_process"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginEnd="@dimen/base_15"
+            android:layout_marginStart="@dimen/base_15"
+            android:layout_marginTop="@dimen/base_20" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_15"
+            android:layout_marginEnd="@dimen/base_15"
+            android:layout_marginStart="@dimen/base_15"
+            android:layout_marginTop="@dimen/base_15"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/update_not_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_8"
+                android:paddingEnd="@dimen/base_10"
+                android:paddingStart="@dimen/base_10"
+                android:paddingTop="@dimen/base_8"
+                android:text="@string/bus_update_later"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size_small_2" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_15"
+                android:background="@drawable/bus_update_button_bg"
+                android:paddingBottom="@dimen/base_8"
+                android:paddingEnd="@dimen/base_10"
+                android:paddingStart="@dimen/base_10"
+                android:paddingTop="@dimen/base_8"
+                android:text="@string/bus_update_right_now"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_small_2" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.CardView>

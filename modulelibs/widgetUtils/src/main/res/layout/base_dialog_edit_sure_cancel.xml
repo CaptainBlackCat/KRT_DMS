@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/base_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_rectangle_white_btn_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_16">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_font_color_black"
+        android:textSize="@dimen/base_font_size_large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_15"
+        android:layout_marginStart="@dimen/base_15"
+        android:layout_marginTop="@dimen/base_15"
+        android:background="@drawable/base_rectangle_hollow_black_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="@dimen/base_10"
+        android:text=""
+        android:textColor="@color/base_font_color_black"
+        android:textColorHint="@color/base_font_color_gray"
+        android:textSize="@dimen/base_font_size"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_max_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/base_15"
+        android:layout_marginTop="@dimen/base_10"
+        android:text="123"
+        android:textSize="@dimen/base_font_size_small_2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/base_10"
+        android:background="#D9D9D9"
+        app:layout_constraintTop_toBottomOf="@+id/tv_max_count"
+        app:layout_goneMarginTop="@dimen/base_30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_10"
+            android:paddingTop="@dimen/base_10"
+            android:text="@string/base_sure"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size_2" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D9D9D9" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_10"
+            android:paddingTop="@dimen/base_10"
+            android:text="@string/base_cancel"
+            android:textColor="@color/base_font_color_black"
+            android:textSize="@dimen/base_font_size_2" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

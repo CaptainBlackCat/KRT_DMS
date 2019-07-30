@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_app_background_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_15"
+        android:layout_marginEnd="@dimen/base_15"
+        android:layout_marginBottom="@dimen/base_10"
+        android:background="@drawable/home_rectangle_light_blue_bg">
+
+        <TextView
+            android:id="@+id/today_performance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:layout_marginBottom="@dimen/base_15"
+            android:paddingTop="@dimen/base_15"
+            android:paddingBottom="@dimen/base_15"
+            android:text="本日业绩"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line1"
+            style="@style/Base_Simple_Line_Style"
+            android:background="#5fbbfa"
+            app:layout_constraintTop_toBottomOf="@+id/today_performance" />
+
+        <LinearLayout
+            android:id="@+id/number_of_terminals_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/number_of_order_container"
+            app:layout_constraintTop_toBottomOf="@+id/line1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_large_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终端数"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/base_10"
+            android:layout_marginBottom="@dimen/base_10"
+            android:background="#5fbbfa"
+            app:layout_constraintBottom_toBottomOf="@+id/number_of_terminals_container"
+            app:layout_constraintLeft_toRightOf="@+id/number_of_terminals_container"
+            app:layout_constraintTop_toTopOf="@+id/number_of_terminals_container" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/base_10"
+            android:layout_marginBottom="@dimen/base_10"
+            android:background="#5fbbfa"
+            app:layout_constraintBottom_toBottomOf="@+id/number_of_terminals_container"
+            app:layout_constraintLeft_toRightOf="@+id/number_of_order_container"
+            app:layout_constraintTop_toTopOf="@+id/number_of_terminals_container" />
+
+        <LinearLayout
+            android:id="@+id/number_of_order_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/number_of_terminals_container"
+            app:layout_constraintLeft_toRightOf="@+id/number_of_terminals_container"
+            app:layout_constraintRight_toLeftOf="@+id/number_of_submarines"
+            app:layout_constraintTop_toTopOf="@+id/number_of_terminals_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_large_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单数"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/number_of_submarines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/number_of_terminals_container"
+            app:layout_constraintLeft_toRightOf="@+id/number_of_order_container"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/number_of_terminals_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_large_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="潜客数"
+                android:textColor="@color/base_white"
+                android:textSize="@dimen/base_font_size_small" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

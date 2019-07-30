@@ -1,0 +1,3 @@
+package com.krt.clue.clueallocation.eventbus
+
+class ClueAllocationRefreshEventBus

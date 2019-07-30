@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_10"
+        android:layout_marginTop="@dimen/base_10"
+        android:layout_marginEnd="@dimen/base_10"
+        android:background="@drawable/base_rectangle_white_layout_bg">
+
+        <LinearLayout
+            android:id="@+id/name_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintHorizontal_weight="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_15"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size_1"
+                android:textStyle="bold"
+                tool:text="12sdfdasf3" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size_1"
+                android:textStyle="bold"
+                tool:text="(H)" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_8"
+            android:layout_marginEnd="@dimen/base_10"
+            android:layout_marginBottom="@dimen/base_8"
+            android:background="@drawable/sub_rectangle_solid_yellow_bg"
+            android:paddingStart="@dimen/base_10"
+            android:paddingTop="@dimen/base_2"
+            android:paddingEnd="@dimen/base_10"
+            android:paddingBottom="@dimen/base_2"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/base_font_size_1"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="5小时50分钟" />
+
+        <View
+            android:id="@+id/line1"
+            style="@style/Base_Simple_Line_Style"
+            android:layout_marginTop="@dimen/base_8"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_intentional_car"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+
+        <TextView
+            android:id="@+id/tv_intentional_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toRightOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@id/tv2"
+            tool:text="金刚1.5LVVT基本版" />
+
+        <View
+            android:id="@+id/line2"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_intentional_model"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <TextView
+            android:id="@+id/tv_intentional_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv3"
+            app:layout_constraintLeft_toRightOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@id/tv3"
+            tool:text="宝马5系" />
+
+        <View
+            android:id="@+id/line3"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+        <LinearLayout
+            android:id="@+id/history_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/line3" />
+
+        <LinearLayout
+            android:id="@+id/history_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:layout_marginTop="@dimen/base_10"
+            android:layout_marginBottom="@dimen/base_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_container">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="@dimen/base_15"
+                android:layout_height="@dimen/base_15"
+                android:src="@drawable/bus_btn_more_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_15"
+                android:text="@string/sub_historical_track_record"
+                android:textColor="@color/base_font_color_blue"
+                android:textSize="@dimen/base_font_size_small_1" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
+
+
+

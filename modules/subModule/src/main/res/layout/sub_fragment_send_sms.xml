@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_rectangle_white_layout_top_left_right_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Sub_Send_Sms_TextView_Style"
+                android:text="客户名称" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/Sub_Send_Sms_TextView_Style"
+                tool:text="444" />
+
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/sms_template_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Sub_Send_Sms_TextView_Style"
+                android:text="短信模板" />
+
+            <TextView
+                android:id="@+id/sms_template"
+                style="@style/Sub_Send_Sms_TextView_Style"
+                android:hint="请选择短信模板" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Sub_Send_Sms_TextView_Style"
+                android:layout_height="match_parent"
+                android:text="短信内容" />
+
+            <EditText
+                android:id="@+id/sms_text"
+                style="@style/Sub_Send_Sms_EditView_Style"
+                android:gravity="start"
+                android:hint="请输入短信内容"
+                android:minHeight="@dimen/base_100"
+                android:minLines="5" />
+
+        </LinearLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_rectangle_white_layout_bottom_left_right_bg"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Sub_Send_Sms_TextView_Style"
+                android:text="顾问签名" />
+
+            <EditText
+                android:id="@+id/consultant_signature"
+                style="@style/Sub_Send_Sms_EditView_Style"
+                android:hint="请输入顾问签名" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

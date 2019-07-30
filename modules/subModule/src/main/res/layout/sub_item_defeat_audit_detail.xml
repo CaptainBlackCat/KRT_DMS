@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_10"
+        android:layout_marginTop="@dimen/base_10"
+        android:layout_marginEnd="@dimen/base_10"
+        android:background="@drawable/base_rectangle_white_layout_bg">
+
+        <LinearLayout
+            android:id="@+id/name_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintHorizontal_weight="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_15"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size_1"
+                android:textStyle="bold"
+                tool:text="12sdfdasf3" />
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="@dimen/base_25"
+                android:layout_height="@dimen/base_25"
+                android:layout_marginStart="@dimen/base_10"
+                android:contentDescription="@string/base_contentDescription"
+                android:padding="@dimen/base_3"
+                android:src="@drawable/bus_ic_phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/base_5"
+            android:paddingTop="@dimen/base_10"
+            android:paddingEnd="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintRight_toLeftOf="@+id/btn_reject"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/base_20"
+                android:layout_height="@dimen/base_20"
+                android:src="@drawable/bus_ic_pass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_5"
+                android:text="@string/sub_pass"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/base_5"
+            android:paddingTop="@dimen/base_10"
+            android:paddingEnd="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintRight_toLeftOf="@+id/btn_distribution"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/base_17"
+                android:layout_height="@dimen/base_17"
+                android:contentDescription="@string/base_contentDescription"
+                android:src="@drawable/bus_ic_reject" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_5"
+                android:text="@string/sub_reject"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_distribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/base_5"
+            android:paddingTop="@dimen/base_10"
+            android:paddingEnd="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/base_20"
+                android:layout_height="@dimen/base_20"
+                android:contentDescription="@string/base_contentDescription"
+                android:src="@drawable/bus_ic_allocation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_5"
+                android:text="@string/sub_distribution"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/btn_distribution" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_intentional_car"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <TextView
+            android:id="@+id/tv_intentional_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toRightOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@id/tv2"
+            tool:text="金刚1.5LVVT基本版" />
+
+        <View
+            android:id="@+id/line2"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_intentional_model"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+
+        <TextView
+            android:id="@+id/tv_intentional_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv3"
+            app:layout_constraintLeft_toRightOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@id/tv3"
+            tool:text="九宫格" />
+
+        <View
+            android:id="@+id/line3"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_cause_of_defeat"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line3" />
+
+        <TextView
+            android:id="@+id/tv_cause_of_defeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv4"
+            app:layout_constraintLeft_toRightOf="@+id/tv4"
+            app:layout_constraintTop_toTopOf="@id/tv4"
+            tool:text="dfadsfdfdafd" />
+
+        <View
+            android:id="@+id/line4"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:text="@string/sub_defeat_description"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line4" />
+
+        <TextView
+            android:id="@+id/tv_defeat_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_15"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            android:textSize="@dimen/base_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/tv5"
+            app:layout_constraintLeft_toRightOf="@+id/tv5"
+            app:layout_constraintTop_toTopOf="@id/tv5"
+            tool:text="12312321afd" />
+
+        <View
+            android:id="@+id/line5"
+            style="@style/Base_Simple_Line_Style"
+            app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+        <LinearLayout
+            android:id="@+id/history_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/line5" />
+
+        <LinearLayout
+            android:id="@+id/history_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/base_10"
+            android:paddingBottom="@dimen/base_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_container">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="@dimen/base_15"
+                android:layout_height="@dimen/base_15"
+                android:src="@drawable/bus_btn_more_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_15"
+                android:text="@string/sub_historical_track_record"
+                android:textColor="@color/base_font_color_blue"
+                android:textSize="@dimen/base_font_size_small_1" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

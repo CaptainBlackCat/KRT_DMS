@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="dev_IconRatingBar" tools:ignore="MissingDefaultResource">
+        <attr name="dev_starCount" format="reference|integer|dimension" />
+        <attr name="dev_starSize" format="reference|integer|dimension" />
+        <attr name="dev_starSpace" format="reference|integer|dimension" />
+        <attr name="dev_starEmptyColor" format="reference|integer|color" />
+        <attr name="dev_starFullColor" format="reference|integer|color" />
+        <attr name="dev_starIcon" format="reference|string" />
+
+        <attr name="dev_starFullIcon" format="reference|string" />
+        <attr name="dev_starFullColorThree" format="reference|integer|color" />
+        <attr name="dev_starFullColorFive" format="reference|integer|color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="type" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <attr name="radius" format="dimension" />ssss
+    </declare-styleable>
+
+    <declare-styleable name="timer_View">
+        <attr name="isDecrease" format="boolean" />
+        <attr name="timerView" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="devGoodsQualityView">
+        <attr name="synopsis" format="string" />
+        <attr name="goodsText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoLineLayout">
+        <attr name="horizontalSpace" format="dimension|reference" />
+        <attr name="verticalSpace" format="dimension|reference" />
+        <attr name="horizontalMaxCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RCAttrs">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+        <attr name="stroke_color" />
+        <attr name="stroke_width" />
+        <attr name="clip_background" />
+    </declare-styleable>
+
+    <declare-styleable name="star">
+        <!--星星数量-->
+        <attr name="starsNum" format="integer" />
+        <!--星星宽度-->
+        <attr name="starWidth" format="dimension" />
+        <!--星星高度-->
+        <attr name="starHeight" format="dimension" />
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension"></attr>
+        <!--星星背景-->
+        <attr name="starBackground" format="reference" />
+        <!--星星变化背景-->
+        <attr name="starDrawBackground" format="reference" />
+        <!--控件是否可以点击-->
+        <attr name="starClickable" format="boolean" />
+        <!--控件是否可以触摸-->
+        <attr name="starTouchable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RainbowTextView">
+        <attr name="colorSpeed" format="dimension" />
+        <attr name="colorSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewWithWordRegular">
+        <attr name="tvMaxFontNum" format="integer"></attr>
+        <attr name="text_between_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+        <attr name="indexBarTextColor" format="color" />
+    </declare-styleable>
+
+</resources>

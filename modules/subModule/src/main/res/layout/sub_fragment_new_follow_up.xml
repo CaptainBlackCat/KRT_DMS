@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_15"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <TextView
+                android:id="@+id/tv_client_name"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:textSize="@dimen/base_font_size_2"
+                android:textStyle="bold"
+                tool:text="郑先生(H)" />
+
+            <TextView
+                android:id="@+id/plan_time_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/base_10"
+                android:text="计划时间"
+                android:textSize="@dimen/base_font_size_small_1"
+                app:layout_constraintBottom_toTopOf="@+id/real_time_sub"
+                app:layout_constraintRight_toLeftOf="@id/plan_time"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/base_15"
+                android:textSize="@dimen/base_font_size_small_1"
+                app:layout_constraintBottom_toTopOf="@+id/real_time_sub"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tool:text="2018-11-11" />
+
+            <TextView
+                android:id="@+id/real_time_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际时间"
+                android:textSize="@dimen/base_font_size_small_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/plan_time_sub"
+                app:layout_constraintRight_toRightOf="@id/plan_time_sub"
+                app:layout_constraintTop_toBottomOf="@+id/plan_time" />
+
+
+            <TextView
+                android:id="@+id/real_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/base_font_size_small_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/plan_time"
+                app:layout_constraintRight_toRightOf="@id/plan_time"
+                app:layout_constraintTop_toBottomOf="@+id/plan_time"
+                tool:text="2018-11-11" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintBottom_toBottomOf="@id/tv_recording_process"
+                app:layout_constraintRight_toLeftOf="@+id/tv_recording_process"
+                app:layout_constraintTop_toTopOf="@+id/tv_recording_process" />
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_recording_process"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="过程记录"
+                app:layout_constraintBottom_toBottomOf="@null" />
+
+            <EditText
+                android:id="@+id/ev_process_record"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                android:gravity="start"
+                android:hint="请输入过程记录"
+                android:maxLines="99"
+                android:minHeight="@dimen/base_80"
+                app:layout_constraintLeft_toRightOf="@+id/tv_recording_process"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_customer_level_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv_customer_level_sub" />
+
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_customer_level_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="客户级别" />
+
+            <TextView
+                android:id="@+id/tv_customer_level"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:text="请输入"
+                android:textColor="@color/base_font_color_gray"
+                app:layout_constraintLeft_toRightOf="@+id/tv_customer_level_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_customer_level" />
+
+            <ImageView
+                android:id="@+id/iv_customer_level"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_cause_of_defeat_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv_cause_of_defeat_sub" />
+
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_cause_of_defeat_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="战败原因" />
+
+            <TextView
+                android:id="@+id/tv_cause_of_defeat"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:hint="请选择"
+                app:layout_constraintLeft_toRightOf="@+id/tv_cause_of_defeat_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_cause_of_defeat" />
+
+            <ImageView
+                android:id="@+id/iv_cause_of_defeat"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/cause_of_defeat_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_defeat_description_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_defeat_description_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="战败描述" />
+
+            <EditText
+                android:id="@+id/tv_defeat_description"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                android:hint="请输入"
+                android:textColor="@color/base_font_color_black"
+                app:layout_constraintLeft_toRightOf="@+id/tv_defeat_description_sub"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/defeat_description_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_car_intentional_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="意向车系" />
+
+            <TextView
+                android:id="@+id/tv_car_intentional"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                app:layout_constraintLeft_toRightOf="@+id/tv_car_intentional_sub"
+                app:layout_constraintRight_toRightOf="parent"
+                tool:text="博越" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/intentional_model_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv_intentional_model_sub" />
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_intentional_model_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="意向车型" />
+
+            <TextView
+                android:id="@+id/tv_intentional_model"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:textColor="@color/base_font_color_black"
+                app:layout_constraintLeft_toRightOf="@+id/tv_intentional_model_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_intentional_model" />
+
+            <ImageView
+                android:id="@+id/iv_intentional_model"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_vehicle_color_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_vehicle_color_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="车辆颜色" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_color"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:hint="请选择"
+                android:textColor="@color/base_font_color_black"
+                app:layout_constraintLeft_toRightOf="@+id/tv_vehicle_color_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_vehicle_color" />
+
+            <ImageView
+                android:id="@+id/iv_vehicle_color"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_follow_up_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv_follow_up_sub" />
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_follow_up_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="跟进方式" />
+
+            <TextView
+                android:id="@+id/tv_follow_up"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:hint="请选择"
+                android:textColor="@color/base_font_color_black"
+                app:layout_constraintLeft_toRightOf="@+id/tv_follow_up_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_follow_up" />
+
+            <ImageView
+                android:id="@+id/iv_follow_up"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/tv_next_follow_up_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv1" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="下次跟进日期" />
+
+            <TextView
+                android:id="@+id/tv_next_follow_up_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_8"
+                android:textColor="@color/base_font_color_black"
+                android:textSize="@dimen/base_font_size_1"
+                app:layout_constraintBottom_toBottomOf="@id/tv1"
+                app:layout_constraintLeft_toRightOf="@+id/tv1"
+                app:layout_constraintTop_toTopOf="@id/tv1"
+                tool:text="2018-1-1" />
+
+            <ImageView
+                android:id="@+id/iv_next_follow_up_data"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_calendar" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/next_follow_up_data_line"
+            style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/next_follow_up_time_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Red_SmallIcon_Style"
+                android:src="@drawable/bus_round_solid_red_bg"
+                app:layout_constraintRight_toLeftOf="@+id/tv2" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="下次跟进时间" />
+
+            <TextView
+                android:id="@+id/tv_next_follow_up_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_8"
+                android:text="23:59"
+                android:textColor="@color/base_black"
+                android:textSize="@dimen/base_font_size_1"
+                app:layout_constraintBottom_toBottomOf="@id/tv2"
+                app:layout_constraintLeft_toRightOf="@+id/tv2"
+                app:layout_constraintTop_toTopOf="@id/tv2" />
+
+            <ImageView
+                android:id="@+id/iv_next_follow_up_time"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

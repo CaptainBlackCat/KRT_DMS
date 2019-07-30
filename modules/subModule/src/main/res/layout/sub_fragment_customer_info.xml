@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_15"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_rectangle_white_layout_top_left_right_bg">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:maxLines="1"
+                android:textStyle="bold"
+                tool:text="考虑考虑(H)男" />
+
+            <ImageView
+                android:id="@+id/iv_major"
+                android:layout_width="@dimen/base_20"
+                android:layout_height="@dimen/base_20"
+                android:layout_marginStart="@dimen/base_3"
+                android:src="@drawable/bus_ic_major"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_user_name"
+                app:layout_constraintLeft_toRightOf="@+id/tv_user_name"
+                app:layout_constraintTop_toTopOf="@+id/tv_user_name" />
+
+            <TextView
+                android:id="@+id/transfer_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/base_15"
+                android:background="@drawable/sub_transform_order_bg"
+                android:paddingStart="@dimen/base_10"
+                android:paddingTop="@dimen/base_4"
+                android:paddingEnd="@dimen/base_10"
+                android:paddingBottom="@dimen/base_4"
+                android:text="@string/sub_transfer_order"
+                android:textColor="@color/base_app_font_blue"
+                android:textSize="@dimen/base_font_size_small_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_user_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_user_name"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv1"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="客户手机" />
+
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv1"
+                app:layout_constraintRight_toLeftOf="@+id/iv_user_phone" />
+
+            <ImageView
+                android:id="@+id/iv_user_phone"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:layout_marginEnd="@dimen/base_10"
+                android:src="@drawable/bus_ic_phone"
+                app:layout_constraintRight_toLeftOf="@+id/iv_user_sms" />
+
+            <ImageView
+                android:id="@+id/iv_user_sms"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_sms" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv2"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="客户来源" />
+
+            <TextView
+                android:id="@+id/tv_customer_source"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv2"
+                app:layout_constraintRight_toRightOf="parent"
+                tool:text="垂直美体 " />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/test_drive_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv3"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="是否试驾" />
+
+            <TextView
+                android:id="@+id/tv_test_drive"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv3"
+                tool:text="否" />
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mortgage_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv4"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="是否按揭" />
+
+            <TextView
+                android:id="@+id/tv_whether_to_mortgage"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv4"
+                tool:text="否" />
+
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/area_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/area_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_area_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="所在专区" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv_area_sub"
+                app:layout_constraintRight_toLeftOf="@+id/iv_area"
+                tool:text="浙江省杭州市" />
+
+            <ImageView
+                android:id="@+id/iv_area"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/address_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv5"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="详细地址" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                app:layout_constraintLeft_toRightOf="@+id/tv5"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/open_more_info_up"
+            style="@style/Sub_Reception_Doc_Open_More"
+            android:text="展开更多信息" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/car_intentional"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="意向车系" />
+
+            <TextView
+                android:id="@+id/tv_car_intentional"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                app:layout_constraintLeft_toRightOf="@+id/car_intentional"
+                app:layout_constraintRight_toRightOf="parent"
+                tool:text="博瑞" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_intentional_model_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="意向车型" />
+
+
+            <TextView
+                android:id="@+id/tv_intentional_model"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv_intentional_model_sub"
+                app:layout_constraintRight_toRightOf="parent"
+                tool:text="博瑞1.8T" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/color_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/color_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_vehicle_color_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="车辆颜色" />
+
+            <TextView
+                android:id="@+id/tv_vehicle_color"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv_vehicle_color_sub"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/network_order_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/network_order_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_network_order"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="@string/sub_network_order" />
+
+            <TextView
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv_network_order"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/online_deposit_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/online_deposit_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_online_deposit"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="网络订金" />
+
+            <TextView
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                app:layout_constraintLeft_toRightOf="@+id/tv_online_deposit"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/car_buying_attention_line"
+            style="@style/Base_Simple_Line_Style"
+            android:visibility="gone" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/car_buying_attention_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:visibility="gone">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_car_buying_attention_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="购车关注"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_car_buying_attention"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_10"
+                app:layout_constraintLeft_toRightOf="@+id/tv_car_buying_attention_sub"
+                app:layout_constraintRight_toLeftOf="@id/iv_attention" />
+
+            <ImageView
+                android:id="@+id/iv_attention"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:src="@drawable/bus_ic_forward" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/open_more_info_down"
+            style="@style/Sub_Reception_Doc_Open_More"
+            android:text="展开更多信息" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="@drawable/base_rectangle_white_layout_bg">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_first_reception_sub"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="初次接待" />
+
+            <TextView
+                android:id="@+id/tv_first_reception"
+                style="@style/Sub_Reception_Doc_EditView_Style"
+                android:layout_marginEnd="@dimen/base_15"
+                android:gravity="start"
+                android:maxLines="99"
+                app:layout_constraintLeft_toRightOf="@+id/tv_first_reception_sub"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_history_record"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:text="历史记录" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <include layout="@layout/bus_item_com_history_view" />
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <LinearLayout
+            android:id="@+id/more_history_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                style="@style/Sub_Reception_Doc_Icon_Style"
+                android:layout_width="@dimen/base_15"
+                android:layout_height="@dimen/base_15"
+                android:layout_marginStart="@dimen/base_15"
+                android:src="@drawable/bus_ic_more_down"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@null"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_more_history_record"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:layout_marginStart="@dimen/base_0"
+                android:text="更多记录"
+                android:textColor="@color/base_app_font_blue"
+                android:textSize="@dimen/base_font_size_small_2"
+                app:layout_constraintLeft_toRightOf="@+id/iv_more" />
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_15"
+            android:background="@color/base_white">
+
+            <com.krt.base.widgets.TextViewWithWordRegular
+                android:id="@+id/tv_retention"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:background="@color/base_white"
+                android:text="留资记录" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View style="@style/Base_Simple_Line_Style" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_white">
+
+            <TextView
+                android:id="@+id/tv_retention_record"
+                style="@style/Sub_Reception_Doc_TextView_Style"
+                android:background="@color/base_white"
+                android:gravity="center"
+                android:text="暂无留资记录"
+                app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_30"
+            android:gravity="center"
+            android:text="我是有底线的"
+            android:textSize="@dimen/base_font_size_small_1"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
