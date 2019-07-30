@@ -1,0 +1,3 @@
+[submodule "loginModule"]
+	path = loginModule
+	url = https://github.com/CaptainBlackCat/loginModule.git
